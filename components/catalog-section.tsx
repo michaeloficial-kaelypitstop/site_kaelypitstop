@@ -58,14 +58,14 @@ const CATALOG_SERVICES = [
     title: 'Envelopamento',
     description:
       'Envelopamento automotivo: proteção e personalização! Protege a pintura contra riscos, renova o visual do carro e permite personalização com estilo e praticidade.',
-    image: '/servicos/envelopamento.png',
+    image: '/servicos/envelopamento.webp',
   },
   {
     id: 'ppf',
     title: 'PPF',
     description:
       'PPF automotivo: proteção invisível! Preserva a pintura contra riscos, arranhões e sujeiras, mantendo o brilho original do veículo por mais tempo.',
-    image: '/servicos/ppf_catalogo.png',
+    image: '/servicos/ppf_catalogo.webp',
   },
 ]
 
