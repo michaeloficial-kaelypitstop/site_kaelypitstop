@@ -1,6 +1,7 @@
 'use client'
 
 import { Reveal } from '@/components/reveal'
+import { TrackedWhatsappLink } from '@/components/tracked-whatsapp-link'
 import { whatsappLinkWithMessage } from '@/lib/site-config'
 
 const CATALOG_SERVICES = [
@@ -37,7 +38,7 @@ const CATALOG_SERVICES = [
     title: 'Polimento',
     description:
       'Polimento automotivo: brilho e renovação! Remove arranhões leves, elimina manchas e recupera o brilho original da pintura do seu carro.',
-    image: '/servicos/polimento.jpg',
+    image: '/servicos/polimento.webp',
   },
   {
     id: 'vitrificacao',
@@ -116,16 +117,18 @@ export function Catalog() {
                 </div>
 
                 {/* Botão de Ação Estilo Outline Néon */}
-                <a
+                <TrackedWhatsappLink
                   href={whatsappLinkWithMessage(
                     `Olá! Gostaria de um orçamento para o serviço de ${item.title}.`
                   )}
                   target="_blank"
                   rel="noopener noreferrer"
+                  location="catalog"
+                  product={item.id}
                   className="w-full rounded-lg border border-[#85d63b]/40 bg-[#85d63b]/10 py-3 px-4 text-center text-[11px] font-bold uppercase tracking-[0.15em] text-[#85d63b] transition-all duration-300 hover:bg-[#85d63b] hover:text-[#0a0a0a] hover:shadow-[0_0_20px_rgba(133,214,59,0.3)]"
                 >
                   Orçar no WhatsApp
-                </a>
+                </TrackedWhatsappLink>
 
               </div>
             </Reveal>

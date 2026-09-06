@@ -4,6 +4,7 @@ import { Check, Gift, ShieldCheck, AlertCircle, PhoneCallIcon } from 'lucide-rea
 import { Reveal } from '@/components/reveal'
 import { whatsappLinkWithMessage } from '@/lib/site-config'
 import { cn } from '@/lib/utils'
+import { TrackedWhatsappLink } from '@/components/tracked-whatsapp-link'
 
 const TECHNOLOGIES = [
 
@@ -189,21 +190,23 @@ export function TechnologiesSection() {
                 </div>
 
                 {/* Botão de Solicitação via WhatsApp */}
-                <a
+                <TrackedWhatsappLink
                   href={whatsappLinkWithMessage(
                     `Olá! Gostaria de agendar a aplicação da película ${item.name} (Garantia ${item.warranty}).`
                   )}
                   target="_blank"
                   rel="noopener noreferrer"
+                  location="technology"
+                  product={item.id}
                   className={cn(
                     'mt-auto flex h-12 w-full items-center justify-center text-center text-xs font-bold uppercase tracking-[0.2em] transition-all duration-300',
                     item.highlight
                       ? 'bg-[#85d63b] text-[#0A0A0A] hover:bg-[#F8F9FA]'
                       : 'border border-white/20 text-[#F8F9FA] hover:border-[#85d63b] hover:text-[#85d63b] hover:bg-white/5'
                   )}
-                >
+                    >
                   Agendar Aplicação
-                </a>
+                </TrackedWhatsappLink>
               </div>
             </Reveal>
           ))}

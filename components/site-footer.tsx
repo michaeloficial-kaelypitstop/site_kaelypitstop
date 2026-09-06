@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { siteConfig, whatsappLinkWithMessage } from '@/lib/site-config'
+import { TrackedWhatsappLink } from '@/components/tracked-whatsapp-link'
 
 export function SiteFooter() {
   return (
@@ -31,14 +32,15 @@ export function SiteFooter() {
               >
               Instagram
             </a>
-            <a
+            <TrackedWhatsappLink
               href={whatsappLinkWithMessage()}
               target="_blank"
               rel="noopener noreferrer"
+              location="footer"
               className="text-sm font-semibold uppercase text-primary transition-colors duration-300 hover:text-foreground"
             >
               WhatsApp
-            </a>
+            </TrackedWhatsappLink>
           </div>
           <div className="flex flex-col gap-4">
             <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-foreground/40">

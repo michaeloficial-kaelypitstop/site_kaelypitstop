@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Reveal } from '@/components/reveal'
 import { whatsappLinkWithMessage } from '@/lib/site-config'
+import { TrackedWhatsappLink } from '@/components/tracked-whatsapp-link'
 import { cn } from '@/lib/utils'
 
 // Mapeamento das películas (Aparência externa por tom)
@@ -117,14 +118,16 @@ export function TintSimulator() {
             </div>
 
             <div className="mt-2 border-t border-border pt-6">
-              <a
-                href={whatsappLinkWithMessage(getWhatsAppMessage())}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-shine flex h-14 w-full items-center justify-center bg-primary text-center text-xs font-bold uppercase tracking-[0.25em] text-primary-foreground transition-transform duration-500 hover:scale-[1.02]"
-              >
-                Solicitar Orçamento
-              </a>
+            <TrackedWhatsappLink
+              href={whatsappLinkWithMessage(getWhatsAppMessage())}
+              target="_blank"
+              rel="noopener noreferrer"
+              location="simulator"
+              product={selectedTint.id}
+              className="btn-shine flex h-14 w-full items-center justify-center bg-primary text-center text-xs font-bold uppercase tracking-[0.25em] text-primary-foreground transition-transform duration-500 hover:scale-[1.02]"
+            >
+              Solicitar Orçamento
+            </TrackedWhatsappLink>
             </div>
           </Reveal>
 
