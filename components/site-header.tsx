@@ -43,9 +43,9 @@ export function SiteHeader() {
             : 'bg-transparent border-transparent'
       )}
     >
-      <div className="relative mx-auto flex max-w-[1440px] items-center justify-between px-5 py-3 sm:px-8 lg:px-12 xl:px-20 lg:py-3.5">
+      <div className="relative mx-auto flex max-w-[1440px] items-center justify-between px-4 py-2 sm:px-8 lg:px-12 xl:px-20 lg:py-3.5">
         
-        {/* Lado Esquerdo: Logo Ampliada */}
+        {/* Lado Esquerdo: Logo Ampliada no Mobile */}
         <a
           href="#herosection"
           className="relative z-50 flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-105"
@@ -64,7 +64,7 @@ export function SiteHeader() {
             alt="Kaély Pitstop"
             width={320}
             height={100}
-            className="h-18 w-auto object-contain sm:h-22 lg:h-26 xl:h-32"
+            className="h-28 w-auto object-contain sm:h-28 lg:h-36 xl:h-40"
             priority
           />
         </a>
@@ -97,7 +97,7 @@ export function SiteHeader() {
             aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((v) => !v)}
-            className="group flex h-10 w-10 flex-col items-end justify-center gap-[6px] p-2 lg:hidden"
+            className="group flex h-11 w-11 flex-col items-end justify-center gap-[6px] p-2 lg:hidden"
           >
             <span className={cn("h-[2px] bg-primary transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]", menuOpen ? "w-6 translate-y-[8px] rotate-45" : "w-6")} />
             <span className={cn("h-[2px] w-6 bg-primary transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]", menuOpen ? "translate-x-4 opacity-0" : "opacity-100")} />
@@ -110,7 +110,7 @@ export function SiteHeader() {
       <div
         id="mobile-menu"
         className={cn(
-          'fixed inset-0 z-40 flex h-[100dvh] w-full flex-col bg-background pt-[72px] sm:pt-[88px] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] lg:hidden',
+          'fixed inset-0 z-40 flex h-[100dvh] w-full flex-col bg-background pt-[88px] sm:pt-[96px] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] lg:hidden',
           menuOpen ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0 delay-100',
         )}
       >

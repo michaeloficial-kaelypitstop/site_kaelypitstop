@@ -34,11 +34,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/kaely_pitstoplogo_rbg.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/kaely_pitstoplogo_rbg.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
