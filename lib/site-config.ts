@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: 'Kaely - Seu Pitstop',
   tagline: 'Precisão em privacidade automotiva.',
-  phoneDisplay: '(41) 8526-3041',
-  whatsappNumber: '554185263041',
-  whatsappUrl: 'https://wa.me/554185263041',
+  phoneDisplay: '(41) 987110906',
+  whatsappNumber: '41987110906',
+  whatsappUrl: 'https://wa.me/41987110906',
   whatsappMessage: 'Olá! Vim pelo site e gostaria de agendar uma avaliação para meu veículo.',
   instagramUrl: 'https://www.instagram.com/kaely_seupitstop/',
   address: {
