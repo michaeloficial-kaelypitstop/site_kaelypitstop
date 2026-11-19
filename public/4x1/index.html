@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formação Mestre Automotivo 4 em 1 | Kaély Seu Pit Stop</title>
+  <meta name="description" content="Domine Insulfilm, Envelopamento, PPF e Marketing Digital Automotivo com quem tem 29 anos de bancada desde 1997." />
+
+  <!-- =====================================================================
+       ÁREA 1: META PIXEL (OPCIONAL)
+       Para ativar, remova os comentários ao redor do script e troque
+       SEU_PIXEL_ID pelo número real do seu Pixel no Gerenciador de Anúncios.
+       ===================================================================== -->
+  <!--
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1" />
+  </noscript>
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-main: #09090b;
+      --bg-card: #121216;
+      --bg-card-elevated: #18181f;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-gold: rgba(212, 175, 55, 0.45);
+      --gold: #d4af37;
+      --gold-bright: #f3d263;
+      --gold-glow: rgba(212, 175, 55, 0.22);
+      --text-main: #f4f4f6;
+      --text-muted: #a1a1aa;
+      --green: #22c55e;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, .font-display {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: -0.02em;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section {
+      padding: 72px 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--border-gold);
+      color: var(--gold-bright);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 44px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 800;
+      margin-top: 14px;
+      margin-bottom: 12px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+
+    .gold-text {
+      color: var(--gold-bright);
+    }
+
+    /* Botão principal de compra */
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      max-width: 520px;
+      padding: 20px 28px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f3d263 0%, #d4af37 55%, #b58d1b 100%);
+      color: #09090b;
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(14px, 2.2vw, 17px);
+      font-weight: 900;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 12px 32px rgba(212, 175, 55, 0.28);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+    }
+
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 40px rgba(212, 175, 55, 0.42);
+      filter: brightness(1.04);
+    }
+
+    .btn-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .secure-note {
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    /* Dobra 1: Hero + Faixa acima do vídeo + VSL */
+    .hero {
+      padding-top: 48px;
+      padding-bottom: 72px;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.14) 0%, transparent 55%),
+        var(--bg-main);
+    }
+
+    .hero-top {
+      text-align: center;
+      max-width: 860px;
+      margin: 0 auto 28px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 4.8vw, 46px);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(16px, 2.2vw, 19px);
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* Faixa destacada acima do vídeo */
+    .revenue-banner {
+      max-width: 820px;
+      margin: 0 auto 14px;
+      padding: 14px 20px;
+      border-radius: 12px;
+      background: linear-gradient(90deg, rgba(212, 175, 55, 0.14), rgba(243, 210, 99, 0.25), rgba(212, 175, 55, 0.14));
+      border: 1.5px solid var(--gold-bright);
+      box-shadow: 0 0 28px var(--gold-glow);
+      text-align: center;
+    }
+
+    .revenue-banner span {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(15px, 2.8vw, 23px);
+      font-weight: 900;
+      color: var(--gold-bright);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .vsl-box {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
+    }
+
+    .vsl-ratio {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      background: #0d0d10;
+    }
+
+    .vsl-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+      gap: 12px;
+    }
+
+    .play-circle {
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background: rgba(212, 175, 55, 0.18);
+      border: 2px solid var(--gold-bright);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      color: var(--gold-bright);
+    }
+
+    .vsl-placeholder strong {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      color: var(--text-main);
+    }
+
+    .vsl-placeholder p {
+      font-size: 14px;
+      color: var(--text-muted);
+      max-width: 440px;
+    }
+
+    /* Dobra 2: Dor & Oportunidade */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .card p, .card li {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .card li::before {
+      content: "✓ ";
+      color: var(--gold-bright);
+      font-weight: 700;
+    }
+
+    /* Dobra 3: Grade dos 3 pilares técnicos */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 24px;
+    }
+
+    .module-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--gold-bright);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+    }
+
+    /* Dobra 4: Bônus de Marketing Digital */
+    .bonus-box {
+      background: linear-gradient(145deg, rgba(212, 175, 55, 0.13), rgba(18, 18, 22, 0.96));
+      border: 1.5px solid var(--border-gold);
+      border-radius: 20px;
+      padding: 36px 28px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .bonus-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 28px;
+    }
+
+    .bonus-header h2 {
+      font-size: clamp(24px, 3.8vw, 34px);
+      font-weight: 900;
+      margin-top: 12px;
+      margin-bottom: 10px;
+    }
+
+    .bonus-header p {
+      color: var(--text-muted);
+    }
+
+    /* Dobra 5: Autoridade */
+    .authority-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 28px;
+      align-items: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
+      padding: 32px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .stat-item {
+      background: var(--bg-card-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .stat-item strong {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--gold-bright);
+    }
+
+    .stat-item span {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Dobra 6: Oferta R$ 97,00 + Garantia */
+    .offer-box {
+      max-width: 680px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 2px solid var(--gold);
+      border-radius: 22px;
+      padding: 40px 28px;
+      text-align: center;
+      box-shadow: 0 24px 70px rgba(212, 175, 55, 0.14);
+    }
+
+    .price-old {
+      color: var(--text-muted);
+      text-decoration: line-through;
+      font-size: 16px;
+      margin-top: 14px;
+    }
+
+    .price-main {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(38px, 6vw, 56px);
+      font-weight: 900;
+      color: var(--gold-bright);
+      line-height: 1.1;
+      margin: 8px 0;
+    }
+
+    .guarantee-strip {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* Dobra 7: FAQ */
+    .faq-list {
+      max-width: 780px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    details {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 18px 22px;
+    }
+
+    summary {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      font-size: 20px;
+      color: var(--gold-bright);
+      flex-shrink: 0;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      margin-top: 12px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 36px 20px;
+      color: var(--text-muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border-subtle);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- DOBRA 1: HEADLINE + FAIXA ACIMA DO VÍDEO + VSL + BOTÃO 1 -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-top">
+        <span class="badge">Formação Mestre Automotivo 4 em 1</span>
+        <h1>Domine Insulfilm, Envelopamento e PPF e Construa uma Operação de Alta Margem</h1>
+        <p class="hero-subtitle">
+          Aprenda na prática o passo a passo técnico de bancada com quem vive o setor automotivo há <strong>29 anos (desde 1997)</strong> — e leve de bônus o método para encher sua agenda com clientes todos os dias.
+        </p>
+      </div>
+
+      <!-- Mensagem em destaque logo acima do vídeo -->
+      <div class="revenue-banner">
+        <span>FATURA MAIS DE R$ 30 MIL REAIS NO SETOR AUTOMOTIVO</span>
+      </div>
+
+      <!-- Área do Vídeo (VSL) -->
+      <div class="vsl-box">
+        <div class="vsl-ratio">
+          <!-- Quando quiser incorporar seu vídeo (YouTube/Vimeo/Panda), substitua o conteúdo de .vsl-placeholder pelo <iframe> -->
+          <div class="vsl-placeholder">
+            <div class="play-circle">▶</div>
+            <strong>Assista ao Vídeo de Apresentação</strong>
+            <p>Veja como serviços de alto valor agregado transformam o faturamento de quem aplica com técnica e sabe atrair clientes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-wrap">
+        <a href="#" class="btn-cta checkout-btn">QUERO GARANTIR MINHA VAGA POR R$ 97,00</a>
+        <span class="secure-note">Acesso imediato • Pagamento seguro via Kiwify • Garantia incondicional de 7 dias</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- DOBRA 2: DOR E OPORTUNIDADE -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Oportunidade de Mercado</span>
+          <h2>Por Que Continuar Brigando por Migalhas Se Você Pode Dominar Serviços de Alta Margem?</h2>
+          <p>Quem depende apenas de serviços baratos e disputados no preço vive sobrecarregado e sem previsibilidade de caixa.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>O Cenário Comum de Quem Estagna</h3>
+            <ul>
+              <li>Trabalha o mês inteiro correndo atrás de serviço barato com margem apertada</li>
+              <li>Perde orçamento por insegurança técnica na hora de cortar, moldar ou finalizar</li>
+              <li>Sabe aplicar bem, mas depende exclusivamente de indicação ou do movimento da rua</li>
+              <li>Não tem um processo claro para transformar visualização em cliente pagante</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>O Jogo de Quem Fatura Alto na Estética Automotiva</h3>
+            <ul>
+              <li>Domina películas, envelopamento e PPF com acabamento limpo e padrão profissional</li>
+              <li>Entrega proteção e estética que justificam tickets muito maiores por veículo</li>
+              <li>Atrai motoristas e proprietários que valorizam qualidade e confiança</li>
+              <li>Combina execução técnica de bancada com aquisição previsível de clientes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOBRA 3: GRADE DOS 3 PILARES TÉCNICOS -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Conteúdo Técnico Prático</span>
+          <h2>Os 3 Pilares Operacionais da Formação</h2>
+          <p>Direto ao ponto, focado no que funciona na vida real da oficina e da bancada.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <span class="module-tag">Pilar 01 • Insulfilm</span>
+            <h3>Aplicação Profissional de Películas</h3>
+            <p>Técnicas práticas de preparo, limpeza, recorte e termomoldagem para entregar visibilidade, conforto térmico e acabamento sem bolhas ou falhas.</p>
+          </div>
+
+          <div class="card">
+            <span class="module-tag">Pilar 02 • Envelopamento</span>
+            <h3>Envelopamento Automotivo e Frotas</h3>
+            <p>Domínio de tensão do material, curvas críticas, acabamento em bordas e execução eficiente para atender tanto carros de passeio quanto demandas comerciais.</p>
+          </div>
+
+          <div class="card">
+            <span class="module-tag">Pilar 03 • PPF</span>
+            <h3>Instalação Técnica de PPF</h3>
+            <p>Cuidados essenciais na preparação da superfície, alinhamento, aplicação e finalização da película de proteção de pintura de alto valor agregado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOBRA 4: BÔNUS EXCLUSIVO DE MARKETING DIGITAL -->
+    <section>
+      <div class="container">
+        <div class="bonus-box">
+          <div class="bonus-header">
+            <span class="badge">Bônus Exclusivo Incluso</span>
+            <h2>Curso de <span class="gold-text">Marketing Digital para Ter Clientes</span></h2>
+            <p>Não basta saber aplicar — você precisa colocar pessoas interessadas pedindo orçamento no seu WhatsApp todos os dias.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <h3>Como Gerar Demanda Todos os Dias</h3>
+              <ul>
+                <li>Como estruturar campanhas no Instagram para alcançar donos de carro na sua região</li>
+                <li>Como criar anúncios simples e diretos que chamam atenção sem gastar fortunas</li>
+                <li>Como direcionar o lead para o WhatsApp e conduzir a conversa para o fechamento</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Posicionamento Que Vende</h3>
+              <ul>
+                <li>Como usar provas reais, bastidores e autoridade para eliminar objeções de preço</li>
+                <li>Como evitar queimar dinheiro com impulsionamentos sem objetivo</li>
+                <li>Como transformar sua presença digital em uma máquina constante de orçamentos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOBRA 5: AUTORIDADE -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Quem Vai Te Guiar</span>
+          <h2>29 Anos de Bancada e Operação Real Desde 1997</h2>
+          <p>Você vai aprender com Michael "Kaé", à frente da Kaély Seu Pit Stop em Curitiba, com vivência diária em oficina, atendimento e formação de profissionais.</p>
+        </div>
+
+        <div class="authority-box">
+          <div>
+            <h3>Experiência Comprovada na Prática</h3>
+            <p style="color: var(--text-muted); margin-top: 12px;">
+              Desde 1997 atuando no setor automotivo, passei pela bancada, formei profissionais que hoje têm seus próprios negócios e mantenho a operação ativa da <strong>Kaély Seu Pit Stop</strong> com avaliação máxima de clientes.
+            </p>
+            <p style="color: var(--text-muted); margin-top: 12px;">
+              Aqui você não recebe teoria de quem nunca encostou uma espátula ou um soprador térmico num carro — recebe o caminho direto de quem vive o campo de batalha.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <strong>29 Anos</strong>
+              <span>De experiência desde 1997</span>
+            </div>
+            <div class="stat-item">
+              <strong>4 em 1</strong>
+              <span>Insulfilm, Envelopamento, PPF + Mkt</span>
+            </div>
+            <div class="stat-item">
+              <strong>Nota 5,0</strong>
+              <span>Padrão de atendimento na loja</span>
+            </div>
+            <div class="stat-item">
+              <strong>7 Dias</strong>
+              <span>Garantia incondicional</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOBRA 6: OFERTA R$ 97,00 + GARANTIA + BOTÃO 2 -->
+    <section id="oferta">
+      <div class="container">
+        <div class="offer-box">
+          <span class="badge">Condição Especial de Acesso</span>
+          <h2 style="margin-top: 14px; font-size: clamp(24px, 3.8vw, 34px); font-weight: 900;">
+            Formação Mestre Automotivo 4 em 1 + Bônus de Marketing Digital
+          </h2>
+          <p style="color: var(--text-muted); margin-top: 10px;">
+            Acesso completo aos módulos técnicos + curso bônus de marketing digital para atrair clientes.
+          </p>
+
+          <p class="price-old">De R$ 497,00 por apenas</p>
+          <div class="price-main">R$ 97,00</div>
+          <p style="color: var(--green); font-weight: 700; font-size: 14px;">Pagamento único • Sem mensalidade escondida</p>
+
+          <div class="btn-wrap">
+            <a href="#" class="btn-cta checkout-btn">SIM! QUERO COMEÇAR AGORA POR R$ 97,00</a>
+          </div>
+
+          <div class="guarantee-strip">
+            <strong style="color: var(--text-main);">Garantia Incondicional de 7 Dias:</strong> Você pode entrar, conhecer o conteúdo e, se dentro de 7 dias sentir que não é para você, basta pedir o reembolso dentro do prazo e recebe 100% do valor pago de volta.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOBRA 7: FAQ + BOTÃO 3 -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Dúvidas Frequentes</span>
+          <h2>Perguntas e Respostas</h2>
+          <p>Tire suas dúvidas antes de garantir seu acesso.</p>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>Como recebo o acesso após o pagamento de R$ 97,00?</summary>
+            <p>Assim que a Kiwify confirmar o pagamento, você recebe imediatamente por e-mail o acesso à área de membros para assistir às aulas no celular, tablet ou computador.</p>
+          </details>
+
+          <details>
+            <summary>O curso de Marketing Digital para ter clientes já vem incluído?</summary>
+            <p>Sim! Ele entra como bônus incluído na sua inscrição para te mostrar como atrair clientes interessados nos serviços automotivos.</p>
+          </details>
+
+          <details>
+            <summary>Serve para quem está começando do zero?</summary>
+            <p>Sim. A formação foi pensada tanto para quem quer dar o primeiro passo na estética automotiva quanto para aplicadores e donos de loja que querem elevar a técnica e o fluxo de clientes.</p>
+          </details>
+
+          <details>
+            <summary>E se eu não gostar ou não me adaptar?</summary>
+            <p>Você conta com 7 dias de garantia incondicional a partir da compra. Se solicitar o cancelamento dentro desse prazo, o valor de R$ 97,00 é devolvido integralmente pela plataforma.</p>
+          </details>
+        </div>
+
+        <div class="btn-wrap" style="margin-top: 36px;">
+          <a href="#" class="btn-cta checkout-btn">GARANTIR MINHA VAGA POR R$ 97,00</a>
+          <span class="secure-note">Checkout oficial Kiwify • Liberação imediata</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Kaély Seu Pit Stop</strong> • 29 anos de experiência no setor automotivo (desde 1997).</p>
+      <p style="margin-top: 6px;">Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const CHECKOUT_URL = "https://pay.kiwify.com.br/RHNojp0";
+
+    document.querySelectorAll(".checkout-btn").forEach((btn) => {
+      btn.setAttribute("href", CHECKOUT_URL);
+      btn.addEventListener("click", () => {
+        if (typeof window.fbq === "function") {
+          window.fbq("track", "InitiateCheckout", {
+            value: 97.00,
+            currency: "BRL"
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
