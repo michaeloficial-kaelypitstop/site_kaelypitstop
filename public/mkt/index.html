@@ -710,7 +710,7 @@
   <div class="urgency-bar">
     <div class="urgency-inner">
       <span><span class="pulse-dot"></span>LOTE PROMOCIONAL DE LANÇAMENTO: RESTAM APENAS <strong>7 VAGAS</strong> POR R$ 97,00</span>
-      <span class="timer-pill">EXPIRA EM: <span id="countdown">14:59</span></span>
+      <span class="timer-pill">EXPIRA EM: <span id="countdown">05:00</span></span>
     </div>
   </div>
 
@@ -755,7 +755,7 @@
       </div>
 
       <div class="btn-wrap">
-        <a href="#" class="btn-cta checkout-btn">QUERO MUDAR O PERFIL DOS MEUS CLIENTES POR R$ 97,00</a>
+        <a href="https://pay.kiwify.com.br/MKXAHIA" class="btn-cta checkout-btn">QUERO MUDAR O PERFIL DOS MEUS CLIENTES POR R$ 97,00</a>
         <div class="scarcity-box">
           <div class="scarcity-top">
             <span>Vagas do 1º Lote Promocional</span>
@@ -917,7 +917,7 @@
           <p style="color: var(--lime-bright); font-weight: 700; font-size: 14px;">Pagamento único • Sem mensalidade • Acesso imediato</p>
 
           <div class="btn-wrap">
-            <a href="#" class="btn-cta checkout-btn">SIM! QUERO GARANTIR MINHA VAGA POR R$ 97,00</a>
+            <a href="https://pay.kiwify.com.br/MKXAHIA" class="btn-cta checkout-btn">SIM! QUERO GARANTIR MINHA VAGA POR R$ 97,00</a>
             <div class="scarcity-box">
               <div class="scarcity-top">
                 <span>Últimas vagas neste valor</span>
@@ -968,7 +968,7 @@
         </div>
 
         <div class="btn-wrap" style="margin-top: 36px;">
-          <a href="#" class="btn-cta checkout-btn">GARANTIR MINHA VAGA AGORA POR R$ 97,00</a>
+          <a href="https://pay.kiwify.com.br/MKXAHIA" class="btn-cta checkout-btn">GARANTIR MINHA VAGA AGORA POR R$ 97,00</a>
           <span class="secure-note">Checkout oficial Kiwify • Garantia incondicional de 7 dias</span>
         </div>
       </div>
@@ -977,13 +977,13 @@
 
   <footer>
     <div class="container">
-      <p><strong>Kaély Seu Pit Stop</strong> • 29 anos de experiência no setor automotivo (desde 1997)[cite: 5, 8].</p>
+      <p><strong>Kaély Seu Pit Stop</strong> • 29 anos de experiência no setor automotivo (desde 1997).</p>
       <p style="margin-top: 6px;">Todos os direitos reservados.</p>
     </div>
   </footer>
 
   <script>
-    const CHECKOUT_URL = "https://pay.kiwify.com.br/RHNojp0";
+    const CHECKOUT_URL = "https://pay.kiwify.com.br/MKXAHIA";
 
     document.querySelectorAll(".checkout-btn").forEach((btn) => {
       btn.setAttribute("href", CHECKOUT_URL);
@@ -997,13 +997,14 @@
       });
     });
 
-    // Cronômetro regressivo de urgência (14:59)
-    let totalSeconds = 14 * 60 + 59;
+    // Cronômetro regressivo de urgência (05:00)
+    const INITIAL_SECONDS = 5 * 60;
+    let totalSeconds = INITIAL_SECONDS;
     const countdownEl = document.getElementById("countdown");
 
     setInterval(() => {
       if (totalSeconds <= 0) {
-        totalSeconds = 14 * 60 + 59;
+        totalSeconds = INITIAL_SECONDS;
       } else {
         totalSeconds--;
       }
